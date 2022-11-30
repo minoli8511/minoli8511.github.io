@@ -1,0 +1,19 @@
+#rfd:first-child {
+    display: flex;
+    color: rgb(188, 219, 255);
+}
+
+#rfd {
+    display: block;
+    border: solid 1px lightgrey;
+    background-color: #8080800d;
+}
+
+.address {
+    display: flex;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+}

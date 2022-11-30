@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/styles.css">
   <style>
     body,
     h1,
@@ -84,66 +85,71 @@
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Medical Statistics Unit</span><br>
     <span class="w3-large">Welcome to the </span>
     <div class="w3-display-left w3-text-black" style="padding:48px; position:inherit; top: 100px;">
-      <span class="w3-jumbo w3-hide-small">  Library </span><br>
+      <span class="w3-jumbo w3-hide-small"> Library </span><br>
       <img src="https://images.app.goo.gl/KSVhq4jtTsoJt3pPA"> </img>
     </div>
-    
+
   </header>
 
- 
-    
- 
 
+  <div id="rfd" style="display: none;">
+    <div>Return Formats</div>
+    <div> <a href="/assets/documents/Staff%20-%202021.xlsx">Return format 1</a> </div>
+    <div> <a href="/assets/documents/Maternal%20Return%20Final%20Sinhala%202020%20(2019.07.22)%20(1).xlsx">Return format 2</a> </div>
   </div>
+
+
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
 
-  <!-- list of components" -->
-  <div class="w3-row-padding w3-light-grey" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container background light-blue">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">DHS Reports  </a></h3>
+    <!-- list of components" -->
+    <div class="w3-row-padding w3-light-grey" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container background light-blue">
+            <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation" target="_blank">DHS Reports </a></h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Data Formats with Instructions </a></h3>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h5><a onclick="showFormats();">Data Formats with Instructions </a>
+              </h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Special Indicators with Definitions  </a></h3>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Special Indicators with Definitions
+              </a></h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Publications  </a></h3>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Publications </a></h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Presentations  </a></h3>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Presentations </a></h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-          <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Data Leaflets  </a></h3>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h5><a href="http://www.statistics.gov.lk/Health/StaticalInformation">Data Leaflets </a></h3>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
- 
+
 
 
 
@@ -154,7 +160,7 @@
     <div class="w3-xlarge w3-section">
 
     </div>
-    
+
   </footer>
   <script>
     // Modal Image Gallery
@@ -163,6 +169,10 @@
       document.getElementById("modal01").style.display = "block";
       var captionText = document.getElementById("caption");
       captionText.innerHTML = element.alt;
+    }
+
+    function showFormats() {
+      document.getElementById("rfd").style.display = "block";
     }
 
 
