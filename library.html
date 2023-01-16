@@ -37,7 +37,44 @@
     .w3-bar .w3-button {
       padding: 16px;
     }
-  </style>
+
+  
+.dropbtn {
+  background-color: #4073d1;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #7e31e27e;}
+</style>
+
 </head>
 
 <body>
@@ -150,33 +187,67 @@
     </div>
   </div>
 
-  <div class="w3-container">
-    <h2>Dropdown Button</h2>
-    <p>Move the mouse over the button to open the dropdown content.</p>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-blue-grey">Presentations </button>
-      <div class="w3-dropdown-content w3-bar-block w3-border">
-        <a href="#" class="w3-bar-item w3-button"> Introduction to Medical Statistics</a>
-        <a href="#" class="w3-bar-item w3-button"> Functions of the Medical Statistics Unit</a>
-        <a href="#" class="w3-bar-item w3-button">eIMMR </a>
-        <a href="#" class="w3-bar-item w3-button">Introcuction to ICD Coding </a>
-        <a href="#" class="w3-bar-item w3-button">Returns to MSU </a>
-
-      </div>
-
-      <button class="w3-button w3-blue-grey">Data Formats with Intructions </button>
-      <div class="w3-dropdown-content w3-bar-block w3-border">
-        <a href="#" class="w3-bar-item w3-button">Maternal</a>
-        <a href="#" class="w3-bar-item w3-button">Beds</a>
-        <a href="#" class="w3-bar-item w3-button">Staff </a>
-        <a href="#" class="w3-bar-item w3-button">Specialists </a>
-        <a href="#" class="w3-bar-item w3-button">Ourdoor and Clinic</a>
-      </div>
-
-      <button class="w3-button w3-blue-grey">DHS Reports </button>
+  
+  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px" 
+  <div class="dropdown">
+    <button class="dropbtn">Presentations</button>
+    <div class="dropdown-content">
+      <a href="#">Introduction to Medical Statistics</a>
+      <a href="#">Functions of the Medical Statistics</a>
+      <a href="#">Introcuction to ICD Coding</a>
+      <a href="#">Returns to MSU</a>
     </div>
   </div>
-  
+
+  <div class="dropdown">
+    <button class="dropbtn">Data Formats with Intructions</button>
+    <div class="dropdown-content">
+      <a href="#">Maternal</a>
+      <a href="#">Beds</a>
+      <a href="#">Staff</a>
+      <a href="#">Specialists</a>
+      <a href="#">Ourdoor and Clinic</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">DHS Reports</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Special Indicators with References</button>
+    <div class="dropdown-content">
+      <a href="#">Introduction to Medical Statistics</a>
+      <a href="#">Functions of the Medical Statistics</a>
+      <a href="#">Introcuction to ICD Coding</a>
+      <a href="#">Returns to MSU</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Publications</button>
+    <div class="dropdown-content">
+      <a href="#">Introduction to Medical Statistics</a>
+      <a href="#">Functions of the Medical Statistics</a>
+      <a href="#">Introcuction to ICD Coding</a>
+      <a href="#">Returns to MSU</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" target="blank" >Data Leaflets</button>
+    <div class="dropdown-content">
+      <a href="#">Introduction to Medical Statistics</a>
+      <a href="#">Functions of the Medical Statistics</a>
+      <a href="#">Introcuction to ICD Coding</a>
+      <a href="#">Returns to MSU</a>
+    </div>
+  </div>
+  </div>
+
 
 
 
