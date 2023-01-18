@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body,
+
+    body,
       h1,
       h2,
       h3,
@@ -36,7 +36,23 @@
       .w3-bar .w3-button {
         padding: 16px;
       }
-    </style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+          </style>
   </head>
   
   <body>
@@ -78,17 +94,33 @@
     <a href="/home.html" onclick="w3_close()" class="w3-bar-item w3-button">Staff Access</a>
 
   </nav>
+    <h3 class="w3-center">Trainings</h3>
+  <p> We conduct trainings on Coding of disease based on ICD-10, eIMMR and other returns to hospital staff.</p>
   
-    <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Medical Statistics Unit</span><br>
-      <span class="w3-large">Welcome to the </span>
-      <div class="w3-display-left w3-text-white" style="padding:48px; position:inherit; top: 100px;">
-        <span class="w3-jumbo w3-hide-small">  Trainings </span><br>
-  
-       
-      
-    </header>
+  <div class="row">
+    <div class="column">
+      <img src="/assets/tr1.JPG" alt="Trainings" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/assets/tr2.jpg" alt="Trainings" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/assets/tr3.JPG" alt="Trainings" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="/assets/tr4.JPG" alt="Trainings" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/assets/tr5.JPG" alt="Trainings" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/assets/tr6.jpg" alt="Trainings" style="width:100%">
+    </div>
+  </div>
+
 
 
   <!-- upcoming_trainings Section -->
