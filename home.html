@@ -37,36 +37,21 @@
     .w3-bar .w3-button {
       padding: 16px;
     }
+
+    .home-indicator-image {
+      height: "200px"
+    }
+
+    .section-nav-links {
+      text-align: center;
+    }
+
+    .section-nav-links a {
+      /* text-decoration: none; */
+    }
   </style>
-  <script>
 
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      }
-
-      else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
+  <script src="public/main.js"></script>
 </head>
 
 <body>
@@ -84,10 +69,6 @@
         <a href="/training.html" class="w3-bar-item w3-button">Trainings</a>
         <a href="/contactus.html" class="w3-bar-item w3-button"> Contact Us</a>
         <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Staff Access </a>
-
-        <input type="text" placeholder="Search..">
-
-
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -148,37 +129,28 @@
     <div class="w3-row-padding">
       <div class="w3-col">
         <divstyle="margin-top: 50px;">
-          <div class="w3-quarter ">
-            <img src="/assets/home_data requests.jpeg">
-            <br>
-
-            <span class="w3-xlarge"> Any Data Request?</span>
-            <br>
-            <span> <a href="/data_on_demand.html" target="_blank">Access available data </a> </span>
-
-          </div>
-          <div class="w3-quarter w3-">
-            <img src="/assets/home_training.jpg">
-            <br>
-            <span class="w3-xlarge">Need a Training? </span>
-            <br>
-            <span> <a href="/training.html" target="_blank"> Arrange a training for you </a></span>
+          <div class="w3-quarter">
+            <img class="home-indicator-image" src="/assets/home_data requests.jpeg" height="200px">
+            <div class="w3-xlarge"> Any Data Request?</div>
+            <a href="/data_on_demand.html" target="_blank">Access available data </a>
           </div>
 
           <div class="w3-quarter">
-            <img src="/assets/home_eimmr.jpeg">
+            <img class="home-indicator-image" src="/assets/home_training.jpg" height="200px">
+            <div class="w3-xlarge">Need a Training? </div>
+            <a href="/training.html" target="_blank"> Arrange a training for you </a>
+          </div>
 
-            <span class="w3-xlarge"> New to eIMMR?</span>
-            </br>
+          <div class="w3-quarter">
+            <img class="home-indicator-image" src="/assets/home_eimmr.jpeg" height="200px">
+            <div class="w3-xlarge"> New to eIMMR?</div>
             <span> <a href="/eimmr.html" target="blank"> Create an eIMMR account </a></span>
-
           </div>
-          <div class="w3-quarter">
-            <img src="/assets/home_resources.jpeg">
-            <span class="w3-xlarge">Learning Resources</span>
-            <br>
-            <span> <a href="/library.html"> View our learning materials </a> </span>
 
+          <div class="w3-quarter">
+            <img class="home-indicator-image" src="/assets/home_resources.jpeg" height="200px">
+            <div class="w3-xlarge">Learning Resources</div>
+            <a href="/library.html"> View our learning materials </a>
           </div>
       </div>
 
@@ -286,35 +258,34 @@
   <div class="w3-container w3-indigo" style="padding:40px 30px 40px">
     <div class="w3-row-padding">
       <div class="w3-col">
-        <div class="w3-quarter w3-blue-grey">
-          <h2> <a href="http://www.health.gov.lk/moh_final/english/others.php?pid=110" target="_blank"></a>Annual Health
-            Bulletin </a></h2>
+        <div class="w3-quarter">
+          <h2 class="section-nav-links">
+            <a href="http://www.health.gov.lk/moh_final/english/others.php?pid=110" target="_blank">
+              Annual Health Bulletin
+            </a>
+          </h2>
         </div>
 
-
-
-
-        <div class="w3-quarter w3-light-blue">
-          <h2>Publications</h2>
+        <div class="w3-quarter">
+          <a href="" target="_blank">
+            <h2 class="section-nav-links">Publications</h2>
+          </a>
         </div>
 
-        <div class="w3-quarter w3-blue">
-          <h2>Hospital Returns</h2>
+        <div class="w3-quarter">
+          <a href="" target="_blank">
+            <h2 class="section-nav-links">Hospital Returns</h2>
+          </a>
         </div>
-        <div class="w3-quarter w3-grey">
-          <h2>Instructions</h2>
+
+        <div class="w3-quarter">
+          <a href="" target="_blank">
+            <h2 class="section-nav-links">Instructions</h2>
+          </a>
         </div>
-
-
-
-
-
-
       </div>
 
-
     </div>
-
   </div>
   </div>
 
