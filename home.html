@@ -37,34 +37,36 @@
     .w3-bar .w3-button {
       padding: 16px;
     }
+  </style>
+  <script>
 
     // Modal Image Gallery
     function onClick(element) {
-      document.getElementById("img01").src=element.src;
-      document.getElementById("modal01").style.display="block";
-      var captionText=document.getElementById("caption");
-      captionText.innerHTML=element.alt;
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
     }
 
 
     // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar=document.getElementById("mySidebar");
+    var mySidebar = document.getElementById("mySidebar");
 
     function w3_open() {
-      if (mySidebar.style.display==='block') {
-        mySidebar.style.display='none';
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
       }
 
       else {
-        mySidebar.style.display='block';
+        mySidebar.style.display = 'block';
       }
     }
 
     // Close the sidebar with the close button
     function w3_close() {
-      mySidebar.style.display="none";
+      mySidebar.style.display = "none";
     }
-  </style>
+  </script>
 </head>
 
 <body>
@@ -84,7 +86,7 @@
         <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Staff Access </a>
 
         <input type="text" placeholder="Search..">
-        
+
 
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -195,7 +197,7 @@
   <div class="w3-container w3-grey" style="padding:40px 30px 40px">
     <div class="w3-row-padding">
       <div class="w3-col">
-        <divstyle="margin-top: 50px;">    
+        <divstyle="margin-top: 50px;">
           <h2>Annual Health Bulletin</h2>
           <h4>Medical Statisticu Unit publishes the Annual Health Bulletin and eIMMR reports annually. You may access
             them online under the publication section, Ministry of Health website. </h4> <a
